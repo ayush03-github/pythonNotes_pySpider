@@ -1,4 +1,9 @@
+# MatchCase : it is faster way to perform if elif 
+# here if a == 1 is written as case 1
 
+# NOTE : case values can be integer or float or complex or string or tuple or boolean
+# NOTE : case _ must be the last case i.e it should not be defined as first case or middle case
+# NOTE : case _ is optional
 
 
 n = int(input("n: "))
