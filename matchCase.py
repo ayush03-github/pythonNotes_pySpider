@@ -5,6 +5,14 @@
 # NOTE : case _ must be the last case i.e it should not be defined as first case or middle case
 # NOTE : case _ is optional
 
+# SYNTAX:
+'''match variableName :
+    case condition :
+        statement
+    case condition :
+        statement'''
+
+
 
 n = int(input("n: "))
 match n :
@@ -46,4 +54,7 @@ match n :
         print("7")
     case _ :
         print("invalid number of day")
+
+
+
     
