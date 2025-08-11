@@ -1,5 +1,5 @@
 # MatchCase : it is faster way to perform if elif 
-# here if a == 1 is written as case 1
+# here if a == 1 is written as case 1 and it goes both ways
 
 # NOTE : case values can be integer or float or complex or string or tuple or boolean
 # NOTE : case _ must be the last case i.e it should not be defined as first case or middle case
@@ -22,6 +22,28 @@ match n :
         print("saturday")
     case 7 :
         print("monday")
+    case _ :
+        print("invalid number of day")
+
+
+# Print what number of the weeday is the input
+
+n = input("n: ")
+match n :
+    case "monday" :
+        print("1")
+    case "tuesday" :
+        print("2")
+    case "wednesday" :
+        print("3")
+    case "thursday" :
+        print("4")
+    case "friday" :
+        print("5")
+    case "saturday" :
+        print("6")
+    case "sunday" :
+        print("7")
     case _ :
         print("invalid number of day")
     
