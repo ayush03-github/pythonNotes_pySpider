@@ -31,18 +31,12 @@ Input : for i in range (1,6,1):
                 print(i,end=" ")
 
 Output : 
-1
-2
-3
-4
-5
-
-
+1 2 3 4 5
 
 
 Start : from where the loop starts
 End : at where the loop ends
-Step : change in value
+Step : change in value (either increment or decrement)
 
 
 
