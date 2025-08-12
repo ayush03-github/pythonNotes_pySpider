@@ -40,5 +40,5 @@ Step : change in value (either increment or decrement)
 
 
 
-While : A while loop repeatedly executes a block of code as long as a specified condition remains true. It is useful when the number of iterations is not known beforehand, and the loop's termination depends on a condition becoming false. 
+While : A while loop repeatedly executes a block of code as long as a specified condition remains true. It is useful when the number of iterations is not known as well as not known beforehand, and the loop's termination depends on a condition becoming false.  
 

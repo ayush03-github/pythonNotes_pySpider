@@ -1,3 +1,10 @@
+# SYNTAX 
+'''while condition:
+    Statement'''
+
+
+#  NOTE : updation is necesary in while loop
+
 #Print 1 to 10 — Use a while loop to print numbers from 1 to 10.
 
 '''num = int(input("Upto which number you want to print number"))
@@ -19,11 +26,11 @@ print(total)'''
 
 # Multiplication table — Print the table of a number (input by user) up to 10.
 
-'''num = int(input("n : "))
+"""num = int(input("n : "))
 count = 1
 while count <= 10 :
-    print(f"{num} x {count} is", count * num)
-    count = count + 1'''
+    print(f"{num} x {count} is {count * num}")
+    count = count + 1"""
 
 
 # Countdown — Print numbers from input down to 1.
@@ -36,19 +43,19 @@ while n >= 1 :
 
 # List elements — Given a list of fruits, print each fruit on a separate line.
 
-n = int(input("how many fruits do you want : "))
+# n = int(input("how many fruits do you want : "))
 
 
-fruits = []
-count = 0
+# fruits = []
+# count = 0
 
-while count < n :
-    fruit = input(f"Enter the name of fruit {count + 1}: ")
-    fruits.append(fruit)
-    print(fruits)
-    count = count + 1
+# while count < n :
+#     fruit = input(f"Enter the name of fruit {count + 1}: ")
+#     fruits.append(fruit)
+#     print(fruits)
+#     count = count + 1
 
-count = 0
-while count < len(fruits) :
-    print(fruits[count])
-    count += 1
+# count = 0
+# while count < len(fruits) :
+#     print(fruits[count])
+#     count += 1
