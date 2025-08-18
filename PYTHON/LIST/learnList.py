@@ -1,11 +1,11 @@
-fruits = ["apple", "mango", "banana", "papaya"]
+'''fruits = ["apple", "mango", "banana", "papaya"]
 
 print(fruits)
 count = 0
 while count < len(fruits) :
     print(fruits[count])
     count = count + 1
-
+'''
 
 '''
 # Creating a list
@@ -33,3 +33,18 @@ print(my_list) # Output: ['apple', 'kiwi', 'orange', 123, True]
 # Getting the length of a list
 print(len(my_list)) # Output: 5
 '''
+
+
+# to print the value from right to left or end to start we use this approach
+
+'''li=[10,20,30,40,50,60]
+for i in range(len(li)-1,-1,-1):
+    print(li[i],end=" ")'''
+
+# Using while looop
+
+'''li=[10,20,30,40,50,60]
+i=0
+while i < len(li):
+    print(li[i],end=" ")
+    i = i + 1'''
