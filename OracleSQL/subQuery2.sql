@@ -1,0 +1,157 @@
+--CASE 2 Whenever the data to be selcted and the condition to be executed are from different data this approach i used 
+
+--DEPT TABLE
+
+/*
++--------+-------------+----------+
+| DEPTNO | DNAME       | LOC      |
++--------+-------------+----------+
+|     10 | ACCOUNTING  | NEW YORK |
+|     20 | RESEARCH    | DALLAS   |
+|     30 | SALES       | CHICAGO  |
+|     40 | OPERATIONS  | BOSTON   |
++--------+-------------+----------+
+*/
+--EMP TABLE
+
+/*
++-------+--------+-----------+------+------------+-------+-------+--------+
+| EMPNO | ENAME  | JOB       | MGR  | HIREDATE   | SAL   | COMM  | DEPTNO |
++-------+--------+-----------+------+------------+-------+-------+--------+
+|  7839 | KING   | PRESIDENT | NULL | 17-NOV-81  | 5000  | NULL  |     10 |
+|  7566 | JONES  | MANAGER   | 7839 | 02-APR-81  | 2975  | NULL  |     20 |
+|  7698 | BLAKE  | MANAGER   | 7839 | 01-MAY-81  | 2850  | NULL  |     30 |
+|  7782 | CLARK  | MANAGER   | 7839 | 09-JUN-81  | 2450  | NULL  |     10 |
+|  7788 | SCOTT  | ANALYST   | 7566 | 19-APR-87  | 3000  | NULL  |     20 |
+|  7902 | FORD   | ANALYST   | 7566 | 03-DEC-81  | 3000  | NULL  |     20 |
+|  7844 | TURNER | SALESMAN  | 7698 | 08-SEP-81  | 1500  |     0 |     30 |
+|  7900 | JAMES  | CLERK     | 7698 | 03-DEC-81  |  950  | NULL  |     30 |
+|  7654 | MARTIN | SALESMAN  | 7698 | 28-SEP-81  | 1250  |  1400 |     30 |
+|  7499 | ALLEN  | SALESMAN  | 7698 | 20-FEB-81  | 1600  |   300 |     30 |
+|  7521 | WARD   | SALESMAN  | 7698 | 22-FEB-81  | 1250  |   500 |     30 |
+|  7934 | MILLER | CLERK     | 7782 | 23-JAN-82  | 1300  | NULL  |     10 |
+|  7876 | ADAMS  | CLERK     | 7788 | 23-MAY-87  | 1100  | NULL  |     20 |
+|  7369 | SMITH  | CLERK     | 7902 | 17-DEC-80  |  800  | NULL  |     20 |
++-------+--------+-----------+------+------------+-------+-------+--------+
+*/
+
+
+--WAQTD department name of allen 
+
+SELECT DNAME 
+FROM DEPT 
+WHERE DEPTNO = ( SELECT DEPTNO
+                 FROM EMP
+                 WHERE ENAME = 'ALLEN');
+
+
+--WAQTD DETAILS OF EMPLOYEES WORKINGIN ACCOUNTING DEPARTMENT
+
+SELECT * 
+FROM EMP 
+WHERE DEPTN0 = ( SELECT DEPTN0 
+                 FROM DEPT 
+                 WHERE DNAME = "ACCOUNTING");
+
+
+--WAQTD LOACTION OF MILLER 
+
+SELECT LOC 
+FROM DEPT
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM EMP 
+                WHERE ENAME = 'MILLER');
+
+
+--WAQTD DETAILS OF EMPLOYEES EARNING MORE THAN SMITH IN RESEARCH DEPT
+
+SELECT * 
+FROM EMP
+WHERE DEPTNO = ( SELECT DEPTNO
+                 FROM DEPT 
+                 WHERE DEPT='REASEARCH')
+    AND SAL >  (SELECT SAL
+               FROM EMP 
+               WHERE ENAME='SMITH' );
+
+
+--21. WAQTD DNAME OF THE EMPLOYEES WHOS NAME IS SMITH
+
+SELECT DNAME 
+FROM DEPT
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM EMP
+                WHERE ENAME = 'SMITH');
+
+--22. WAQTD DNAME AND LOC OF THE EMPLOYEE WHOS ENAME IS KING
+
+SELECT DNAME , LOC 
+FROM DEPT 
+WHERE DEPTNO = (SELECT DEPTNO  
+                FRPM EMP 
+                WHERE ENAME = 'KING');
+
+--23. WAQTD LOC OF THE EMP WHOS EMPLOYEE NUMBER IS 7902
+
+SELECT LOC
+FROM DEPT
+WHERE DEPTNO = (SELECT DEPTNO 
+                FROM EMP 
+                WHERE EMPNO = '7902');
+
+--24. WAQTD DNAME AND LOC ALONG WITH DEPTNO OF THE EMPLOYEE WHOS NAME ENDS WITH R.
+
+SELECT DNAME, LOC 
+FROM DEPT 
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM EMP
+                WHERE ENAME LIKE '%R');
+
+--25. WAQTD DNAME OF THE EMPLOYEE WHOS DESIGNATION IS PRESIDENT 
+
+SELECT DNAME 
+FROM DEPT
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM EMP
+                WHERE JOB = 'PRESIDENT');
+
+--26. WAQTD NAMES OF THE EMPLOYEES WORKING IN ACCOUNTING DEPARTMENT 
+
+SELECT ENAME
+FROM EMP
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM DEPT
+                WHERE DNAME = 'ACCOUNTING');
+
+--27. WAQTD ENAME AND SALARIES OF THE EMPLOYEES WHO ARE WORKING IN THE LOCATION CHICAGO
+
+SELECT ENAME SAL
+FROM EMP
+WHERE DEPTNO = (SELECT DEPTNO 
+                FROM DEPT 
+                WHERE LOC = 'CHICAGO');
+
+--28. WAOTD DETAILS OF THE EMPLOYEES WORKING IN SALES
+
+SELECT *
+FROM EMP
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM DEPT
+                WHWERE DNAME = 'SALES');
+
+--29. WAQTD DETAILS OF THE EMP ALONG WITH ANNUAL SALARY IF EMPLOYEES ARE WORKING IN NEW YORK 
+
+SELECT EMP.* , SAL * 12 AS ANNUAL_SAL
+FROM EMP
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM DEPT
+                WHERE LOC = 'NEW YORK');
+
+
+--30.WAQTD NAMES OF EMPLOYEES WORKING IN OPERATIONS DEPARTMENT
+
+SELECT ENAME
+FROM EMP
+WHERE DEPTNO = (SELECT DEPTNO
+                FROM DEPT
+                WHERE DNAME = 'OPERATIONS')
