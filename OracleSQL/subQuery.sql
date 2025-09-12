@@ -37,3 +37,38 @@ AND
 HIREDATE < (SELECT HIREDATE
             FROM SCOTT.EMP
             WHERE ENAME = 'KING');
+
+--5.WAQTD name and sal along with annual sal for all employees whose sal is less than blake and more than 3500
+
+SELECT ENAME, SAL, SAL * 12 as ANNUAL_SAL
+FROM SCOTT.EMP
+WHERE SAL > 3500
+and
+SAL < (SELECT SAL
+        FROM SCOTT.EMP
+        WHERE ENAME = 'BLAKE');
+
+--6. WAQTD details of all the employees earning more than scott but less than blake
+
+SELECT *
+FROM SCOTT.EMP
+WHERE SAL > (SELECT SAL
+        FROM SCOTT.EMP
+        WHERE ENAME = 'SCOTT')
+AND
+SAL < (SELECT SAL
+        FROM SCOTT.EMP
+        WHERE ENAME = 'BLAKE');
+
+--7. WAQTD name of the employees whose name starts with A and wroks as same department as BLAKE 
+
+SELECT ENAME 
+FROM EMP 
+WHERE ENAME like '%A'
+AND DEPTNO = (SELECT DEPTNO
+              FROM EMP 
+              WHERE ENAME = 'BLAKE');
+
+
+
+
