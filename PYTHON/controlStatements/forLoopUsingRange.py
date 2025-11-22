@@ -29,7 +29,7 @@ for i in range (1,11):
     print(i, end=" ")'''
 
 # WAP to display all integers from 1 to n
-
+    
 '''n = int(input("n : "))
 for i in range (1, n+1):
     print(i, end=" ")'''
