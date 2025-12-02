@@ -1,0 +1,10 @@
+import pymysql
+try:
+    con_obj = pymysqlconnect(
+        user = "root",
+        password = "root",
+        host = " localhost"
+    )
+    print(con_obj)
+except Exception as except
+    print(e)

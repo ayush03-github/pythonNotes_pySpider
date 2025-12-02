@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+</head>
+<body bgcolor="cyan">
+    <form action="login.html">
+        <fieldset>
+            <legend><strong><h1>Student-Details</h1></strong></legend>
+            <fieldset>
+                <legend><strong><h2>Personal</h2></strong></legend>
+                <table  border="1" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td><label for="">First Name:</label></td>
+                        <td align="center"><input type="text" name="" id="" placeholder="First Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Last Name:</label></td>
+                        <td align="center"><input type="text" name="" id="" placeholder="Last Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Father's Name:</label></td>
+                        <td align="center"><input type="text" name="" id="" placeholder="Father's name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Mother's Name:</label></td>
+                        <td align="center"><input type="text" name="" id=""placeholder="Mother's name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">DOB:</label></td>
+                        <td align="center"><input type="date" name="" id=""  required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Gender:</label></td>
+                        <td>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>Male</b></label>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>Female</b></label>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>Others</b></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Blood Group:</label></td>
+                        <td align="center">
+                            <input type="text" name="" id="" list="bg" placeholder="---choose here---">
+                            <datalist id="bg">
+                                <option value="A+">
+                                <option value="A-">
+                                <option value="B+">
+                                <option value="B-">
+                                <option value="AB+">
+                                <option value="AB-">
+                                <option value="O+">
+                                <option value="O-">
+                            </datalist>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend><strong><h2>Contact</h2></strong></legend>
+                <table border="1" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td><label for="">Mobile No.:</label></td>
+                        <td align="center"><input type="number" name="" id="" placeholder="10 Digits" maxlength="10" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Mail id:</label></td>
+                        <td align="center"><input type="text" name="" id="" placeholder="sample@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Address:</label></td>
+                        <td align="center"><input type="text" name="" id="" placeholder="House no,Street Name" required></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text name=" id="" placeholder="Line1"></td>
+                        <td><input type="text" name="" id="" placeholder="Line2"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Country:</label></td>
+                        <td align="center">
+                            <input type="text" name="" id="" list="country" placeholder="---choose here---" required>
+                            <datalist id="country">
+                                <option value="India">
+                                <option value="America">
+                                <option value="England">
+                                <option value="France">
+                                <option value="Japan">
+                                <option value="Brazil">
+                                <option value="Australia">
+                                <option value="China">
+                            </datalist>
+                        </td>
+                    </tr>
+                     <tr>
+                        <td><label for="">State:</label></td>
+                        <td align="center">
+                            <input type="text" name="" id="" list="states" placeholder="---choose here---" required>
+                            <datalist id="states">
+                                <option value="Odisha">
+                                <option value="Bihar">
+                                <option value="Madhyapradesh">
+                                <option value="Uttarpradesh">
+                                <option value="Jharkhand">
+                                <option value="Andhrapradesh">
+                                <option value="Kerala">
+                                <option value="Karnataka">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Pin Code:</label></td>
+                        <td align="center"><input type="number" name="" id="" placeholder="Pincode" maxlength="6" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                <legend><strong><h2>Education</h2></strong></legend>
+                <table border="1" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td><label for="">Highest Degree:</label></td>
+                        <td align="center"><input type="text" name="" id="" list="degree" placeholder="---choose here---" required>
+                            <datalist id="degree">
+                                <option value="BE"></option>
+                                <option value="B.Tech"></option>
+                                <option value="MCA"></option>
+                                <option value="BCA"></option>
+                                <option value="Diploma"></option>
+                                <option value="M.tech"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Stream:</label></td>
+                         <td>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>Mech</b></label>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>Civil</b></label>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>CS</b></label>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>EEE</b></label>
+                            <br>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>IT</b></label>
+                            <input type="radio" name="domain" id="">
+                            <label for=""><b>EC</b></label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">If Other:</label></td>
+                        <td align="center"><input type="text" name="" id="" ></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">YOP:</label></td>
+                        <td align="center"><input type="number" name="" id="" list="YOP" placeholder="---choose here---" required>
+                            <datalist id="YOP">
+                                <option value="2025"></option>
+                                <option value="2024"></option>
+                                <option value="2023"></option>
+                                <option value="2022"></option>
+                                <option value="2021"></option>
+                                <option value="2020"></option>
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">University:</label></td>
+                        <td align="center"><input type="text" name="" id="" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Percentage:</label></td>
+                        <td align="center"><input type="number" name="" id="" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <fieldset>
+                 <legend><strong><h2>Placement</h2></strong></legend>
+                 <h3>Skills:</h3>
+                  <input type="checkbox" name="" id="html"><label for="html">HTML</label>
+                  <input type="checkbox" name="" id="css"><label for="css">CSS</label>
+                  <input type="checkbox" name="" id="js"><label for="js">Javascript</label>
+                  <input type="checkbox" name="" id="react"><label for="react">ReactJS</label>
+                  <input type="checkbox" name="" id="rn"><label for="rn">React Native</label>
+                  <input type="checkbox" name="" id="node"><label for="node">NodeJS</label>
+                  <input type="checkbox" name="" id="git"><label for="git">Github</label>
+                  <input type="checkbox" name="" id="dj"><label for="dj">Django</label>
+                  <input type="checkbox" name="" id="ang"><label for="ang">Angular.js</label>
+
+                  <h3>Domain:</h3>
+                  <input type="checkbox" name="" id="devl"><label for="devl">Development</label>
+                  <input type="checkbox" name="" id="tes"><label for="Tes">Testing</label>
+                  <input type="checkbox" name="" id="dev"><label for="dev">Devops</label>
+                  <input type="checkbox" name="" id="sup"><label for="sup">Support</label>
+
+                  <h3>Place of preference:</h3>
+                  <input type="checkbox" name="" id="del"><label for="del">Delhi</label>
+                  <input type="checkbox" name="" id="pune"><label for="pune">Pune</label>
+                  <input type="checkbox" name="" id="hyd"><label for="hyd">Hyderabad</label>
+                  <input type="checkbox" name="" id="pan"><label for="pan">Pan India</label>
+
+                   <h3>Place of preference:</h3>
+                  <input type="checkbox" name="" id=""><label for="">Less than 3LPA</label>
+                  <input type="checkbox" name="" id=""><label for="">3.6 LPA</label>
+                  <input type="checkbox" name="" id=""><label for="">6-10 LPA</label>
+                  <input type="checkbox" name="" id=""><label for="">More than 10 LPA</label>
+                  <input type="checkbox" name="" id=""><label for="">No Expectations</label>
+            </fieldset>
+            <fieldset>
+                <legend><strong><h2>Create Account</h2></strong></legend>
+                <table border="1" cellpadding="6" cellspacing="0">
+                    <tr>
+                        <td align="center"><label for="">Username:</label></td>
+                        <td><input type="text" name="" id="" required></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><label for="">Password:</label></td>
+                        <td><input type="text" name="" id="" required></td>
+                    </tr>
+                    <tr>
+                        <td align="center"><label for="">Re-Enter:</label></td>
+                        <td><input type="text" name="" id="" required></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <table width="100%">
+            <tr>
+                <td><input type="checkbox" name="" id="" required>
+            <label for="">Agree Terms and Conditions</label></td>
+            </tr>
+            <tr align="center">
+                <td> <input type="submit" value="Submit" style="width: 10%;" align="center"> 
+                <input type="button" value="Cancel" style="width: 10%;" align="center"></td>
+            </tr>
+           
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
