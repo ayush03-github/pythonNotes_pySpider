@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            object-fit: cover;
+            height: 400px;
+            width: 300px;
+            filter: grayscale(100%);
+    }
+        img:nth-child(3){
+            filter: none;
+        }
+        img:hover{
+            transition: all 2000ms ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <img src="image.jpg" alt="image">
+    <img src="image.jpg" alt="image">
+    <img src="image.jpg" alt="image">
+    <img src="image.jpg" alt="image">
+</body>
+</html>

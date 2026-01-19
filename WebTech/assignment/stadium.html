@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin:0px}
+        .bg{
+            width: 100%;
+            height: 100vh;
+            background-image: url(generated-bg.png);
+            backdrop-filter: blur(100px);
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .pitch{
+            width: 1400px;
+            height: 0;
+            border-bottom: 100px solid #ff9f5a;
+            border-left: 60px solid transparent;
+            border-right: 60px solid transparent;
+            position: absolute;
+            top:753px;
+            left: 245px;
+        }
+        .standing{
+            width: 6px;
+            height: 80px;
+            background-color: #654321;
+            position: absolute;
+            top: 750px;
+            left: 260px;
+            box-shadow: inset -2px 0px 5px rgba(0,0,0,0.3), inset 2px 0px 5px rgba(255,255,255,0.3);
+        }
+        .standing:nth-child(2){
+            top:730px;
+            left: 270px;
+        }
+        .standing:nth-child(3){
+            top:710px;
+            left: 280px;
+        }
+        .standing:nth-child(4){
+            top:750px;
+            left: 1740px;
+        }
+        .standing:nth-child(5){
+            top:730px;
+            left: 1730px;
+        }
+        .standing:nth-child(6){
+            top:710px;
+            left: 1720px;
+        }
+
+        .crease{
+            width: 160px;
+            height: 5px;
+            position: absolute;
+            top: 800px;
+            background: #fff;
+        }
+
+        .crease-horizontal{
+            width: 75px;
+            height: 5px;
+            position: absolute;
+            top: 760px;
+            background: #fff;
+        }
+
+        .crease-left-top{
+            left: 295px;
+        }
+        .crease-right-top{
+            left: 1636px;
+        }
+
+        .crease-left-bottom{
+            left: 255px;
+            top: 835px;
+        }
+        .crease-right-bottom{
+            top:835px;
+            left:1676px;
+        }
+        .crease-left2{
+            transform: rotate(-62deg);
+            left: 270px;
+        }
+        .crease-right2{
+            transform: rotate(62deg);
+            left: 1580px;
+        }
+        .crease-left1{
+            transform: rotate(-62deg);
+            left: 195px;
+        }
+        .crease-right1{
+            transform: rotate(62deg);
+            left: 1650px;
+        }
+
+        .ball{
+            position: absolute;
+            top: 600px;
+            left: 1700px;
+            animation: ball 5s linear 2s forwards;
+        }
+
+        @keyframes ball{
+            0%{
+                top: 600px;
+                left: 1700px;
+            }28%{
+                top: 780px;
+                left: 700px;
+            }
+            40%{
+                top: 720px;
+                left: 400px;
+            }
+            50%{
+                top: 640px;
+                left: 500px;
+            }
+            60%{
+                top: 580px;
+                left: 600px;
+            }
+            70%{
+                top: 500px;
+                left: 800px;
+            }
+            80%{
+                top: 520px;
+                left: 950px;
+            }
+            90%{
+                top: 540px;
+                left: 1050px;
+            }
+            100%{
+                top: 560px;
+                left: 1150px;
+            }
+        }
+        .score{
+            height: 85px;
+            width: 150px;
+            padding-left: 60px;
+            position: absolute;
+            border: 5px solid black;
+            top: 390px;
+            left: 49.5%;
+            transform: translateX(-50%);
+            font-size: 50px;
+            font-weight: bold;
+            color: rgb(0, 68, 255);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+            background: white;
+            opacity: 0;
+            animation: appear 0.5s linear 7s forwards;
+        }
+
+        @keyframes appear {
+            0%{
+                opacity: 0;
+            }
+            100%{
+                opacity: 1;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <div class="pitch"></div>
+        <div class="crease crease-left1"></div>
+        <div class="crease crease-left2"></div>
+        <div class="crease crease-right1"></div>
+        <div class="crease crease-right2"></div>
+        <div class="crease-horizontal crease-left-top"></div>
+        <div class="crease-horizontal crease-left-bottom"></div>
+        <div class="crease-horizontal crease-right-top"></div>
+        <div class="crease-horizontal crease-right-bottom"></div>
+        <div class="stump">
+            <div class="standing"></div>
+            <div class="standing"></div>
+            <div class="standing"></div>
+            <div class="standing"></div>
+            <div class="standing"></div>
+            <div class="standing"></div>
+        </div>
+        <div class="ball"><img src="ball.png" alt="Background" height="20px"></div>
+        <div class="score">Six !!</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0px;}
+        body{
+            background: linear-gradient(to right, white, #97b3ae, white);
+            height: 500vh;
+        }
+        /* .container{
+            height: 500px;
+            width: 800px;
+            background: #eae2b7;
+            display: flex;
+        } */
+        .box{
+            height: 100px;
+            width: 100px;
+        }
+        .container>.box:nth-child(1){
+            background: red;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        .container>.box:nth-child(2){
+            background: blue;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .container>.box:nth-child(3){
+            background: yellow;position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+        .container>.box:nth-child(4){
+            background: green;
+        }
+        .extra{
+            height: 200px;
+            width: 200px;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="extra"></div>
+</body>
+</html>

@@ -29,6 +29,80 @@
         .links>a:focus {
             color: green;
         }
+
+
+        button{
+            height: 60px;
+            width: 200px;
+            border: none; 
+            font-size: larger; 
+            background: linear-gradient(20deg, magenta, indigo); 
+            border-radius:5px;
+            color: antiquewhite;
+            outline: 5px crimson;
+            transition: all 600ms ease-in-out;
+        }
+
+        button:hover{
+            transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+        }
+
+
+
+        input{
+            height: 50px;
+            width: 50px;
+            border-radius: 50px;
+            margin: 20px 100px;
+            transition: all 1000ms ease-in-out;
+        }
+
+        input:focus{
+            width: 400px;
+            background-color: black;
+            transition: all 1000ms ease-in-out;
+            outline: rgb(0, 0, 40);
+            border: 2px solid rgb(0, 191, 255);
+        }
+
+/* overwritten */
+        .heading>h2:first-child{
+            color: brown;
+
+        }
+
+        .heading>h2:last-child {
+            color: chocolate;
+        }
+/* till here */
+        .heading>h2:nth-child(even) {
+            color: red;
+
+        }
+
+        .heading>h2:nth-child(odd) {
+            color: rgb(0, 255, 0);
+
+        }
+
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+
+
+
+            .box{
+                height: 100px;
+                width: 100px;
+                background-color: blue;
+            }
+
+
+        .container>.box:nth-child(even){
+            background-color: cadetblue;
+        }
+
     </style>
 
 
@@ -54,6 +128,41 @@
         <a href="https://www.linkedin.com">linkedin</a></br>
         <a href="https://www.google.com">google</a></br>
         <a href="https://www.x.com">x</a>
+
     </div>
+    <button>Hit it.... !!🔨</button></body><br>
+
+
+    <input></input></br>
+
+    <div class="heading">
+        <h2>This is th 1st heading</h2>
+        <h2>This is th 2nd heading</h2>
+        <h2>This is th 3rd heading</h2>
+        <h2>This is th 4th heading</h2>
+        <h2>This is th 5th heading</h2>
+        <h2>This is th 6th heading</h2>
+        <h2>This is th 7th heading</h2>
+        <h2>This is th 8th heading</h2>
+        <h2>This is th 9th heading</h2>
+        <h2>This is th 10th heading</h2>
+    </div>
+
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+
+
+
+
 </body>
 </html>

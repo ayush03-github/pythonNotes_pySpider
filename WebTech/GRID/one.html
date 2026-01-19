@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .layout{
+            height: 200vh;
+            width: 100%;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto auto ;
+            grid-template-areas: "nav nav nav"
+                                 "side main main"
+                                 "footer footer footer";
+        }
+        .item{
+            display: grid;
+            place-items: center;
+        }
+        .nav{
+            background-color: black;
+            color: white;
+            grid-area: nav;
+            height: 70px;
+        }
+        .aside{
+            background-color: lightgray;
+            grid-area: side;
+            height:400px;
+        }
+        .article{
+            background-color: aliceblue;
+            grid-area: main;
+            height:400px;
+        }
+        .footer{
+            background-color: hotpink;
+            grid-area: footer;
+
+            height:400px;
+
+        }
+        .layout > *{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }   
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <nav class="nav">NavBar</nav>
+        <aside class="aside">SideMenu</aside>
+        <article class="article">Article</article>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

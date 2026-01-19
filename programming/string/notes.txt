@@ -1,0 +1,7 @@
+LIST 
+
+[]
+mutable
+homogeneous and heterogeneous 
+indexing 
+slicing

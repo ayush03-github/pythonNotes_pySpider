@@ -78,3 +78,68 @@ console.log(skills)
 
 skills.reverse()
 console.log(skills)
+
+
+// sort 
+
+let randomNums = [100,23,234,345,567,2345,654,6543]
+const sorted = randomNums.sort((a,b)=>{
+    return a - b
+})
+console.log("sorted numbers ->", sorted)
+
+
+
+
+
+
+
+// _______________________________________________________________________________
+
+// MAP()
+
+
+
+// /Write javascript code to display products in E-commerce website
+
+const products = [
+  {
+    id: 1,
+    category: "electronics",
+    brand: "Skullcandy",
+    description: "A true wireless headset for your best sound experience",
+    stockAvailability: 10,
+    price: 5999,
+    image: "https://m.media-amazon.com/images/I/71XV1uzAw8L._AC_UY327_FMwebp_QL65_.jpg",
+  },
+  {
+    id: 2,
+    category: "smartphone",
+    brand: "Apple",
+    description: "iPhone 16 128 GB: 5G Mobile Phone with Camera Control, A18 Chip and a Big Boost in Battery Life. Works with AirPods; Teal",
+    stockAvailability: 10,
+    price: 119999,
+    image: "https://m.media-amazon.com/images/I/71XV1uzAw8L._AC_UY327_FMwebp_QL65_.jpg",
+  },
+  {
+    id: 3,
+    category: "Cameras",
+    brand: "Sony",
+    description: "A 12D mirrorles camera for capturing the life in the moment",
+    stockAvailability: 2,
+    price: 299999,
+    image: "https://m.media-amazon.com/images/G/31/img25/Camera/clp/1._CB774306738_.jpg",
+  }
+];
+
+
+products.map((products)=>{
+    
+    console.log("id :", products.id)
+    console.log("category :", products.category)
+    console.log("brand", products.brand)
+    console.log("description", products.description)
+    console.log("stock Availiabilty :", products.stockAvailability)
+    console.log("price", products.price)
+
+})

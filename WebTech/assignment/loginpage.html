@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh; 
+            background: url("https://preview.redd.it/u8mr5adgal171.png?width=1080&crop=smart&auto=webp&s=9a0f60e3ee2a00ce925631c74eda82ab288ceafe");
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .wrapper{
+            min-height:80%;
+            width: 35vw;
+            min-width:300px;
+            border-radius: 20px;
+            margin:0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            backdrop-filter: blur(10px);
+            border : 5px solid rgba(255, 255, 255, 0.267);
+            color:white;
+             
+        }
+        .field{
+            height: 50px;
+            width: 300px;
+            margin:20px 0;
+            background: white;
+            border-radius: 50px;
+        }
+        input::placeholder{
+            color: white;
+            font-size: 12px;
+        }
+        button{
+            height: 50px;
+            width: 310px;
+            border-radius: 50px;
+        }
+        h1{
+            padding: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div><input class="field" type="text" placeholder="username">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-2">
+                <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 1 1 9 0 4.5 4.5 0 0 1-9 0ZM3.751 20.105a8.25 8.25 0 0 1 16.498 0 .75.75 0 0 1-.437.695A18.683 18.683 0 0 1 12 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 0 1-.437-.695Z" clip-rule="evenodd" />
+                </svg>
+                
+                </div>
+            <div><input class="field" type="text" placeholder="password"></div>
+            <div style="display: flex; justify-content: space-between;">
+                <div><input type="checkbox"><label>remember me</label></div>
+                <div><p style="margin:0px;">forgot password ?</p></div>
+            </div>
+            <button>login</button>
+            <p>Don't have an account? <a href="">Register</a></p>
+        </form>
+    </div>
+</body>
+</html>

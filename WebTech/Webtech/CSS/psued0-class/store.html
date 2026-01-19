@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STORE</title>
+
+
+    <style>
+        .container{
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .product{
+            border: 2px solid black ;
+            padding: 6px;
+        }
+
+        .product>img{
+            height: 300px;
+            width: 200px;
+            object-fit: cover;
+        }
+
+        .product:has(big){
+            background-color: brown;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/4MCRD0013-01_2_19d4f94d-2220-40a1-a6dd-fc6db72d5d60.jpg?v=1750149134&quality=80" alt="">
+            <h1>Jeans</h1>
+            <p></p>
+            <p></p>
+            <strong>aviliable</strong>
+        </div>
+        <div class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/9ea27ebcb36303e484283811c6009db2.jpg?v=1729520338&quality=80" alt="">
+            <h1>Shirt</h1>
+            <p></p>
+            <p></p>
+            <!-- <strong></strong> -->
+            <big>not ava</big>
+        </div>
+        <div class="product">
+            <img src="https://cdn.shopify.com/s/files/1/0420/7073/7058/files/sh0169-03-1.jpg?v=1762254453&quality=80" alt="">
+            <h1>Shoes</h1>
+            <p></p>
+            <p></p>
+            <strong>iufnoire</strong>
+        </div>
+    </div>
+
+
+</body>
+</html>

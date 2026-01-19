@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>*{margin: 0; padding: 0;}
+        .wrapper{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            background-color: black;
+        }
+        .tl, .tr{
+            height:120px;
+            width:200px;
+            background: red;
+            border-radius: 200px 200px 0 0;
+        }
+        .b{
+            height:0px;
+            width:0px;
+
+            border-right: 200px solid transparent;
+            border-left:200px solid transparent;
+            border-top: 200px solid red;
+        }
+        .t{
+            display: flex;
+            gap: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="heart">
+            <div class="t">
+                <div class="tl"></div>
+                <div class="tr"></div>
+            </div>
+            <div class="b">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

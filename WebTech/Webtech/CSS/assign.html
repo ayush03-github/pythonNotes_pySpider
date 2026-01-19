@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            height:100vh;
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            height:200px;
+            position: absolute;
+        }
+        img:nth-child(1){
+            top:20%;
+            left:20%;
+        }
+        img:nth-child(2){
+            top:40%;
+            left:40%;
+        }
+        img:nth-child(3){
+            top:60%;
+            left:60%;
+        }
+        img:hover{
+            z-index: 10;
+            height:250px;
+            transition: all 300ms ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="inner">
+            <img src="image.jpg" alt="">
+            <img src="AppBreweryWallpaper 1.png" alt="">
+            <img src="image.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>

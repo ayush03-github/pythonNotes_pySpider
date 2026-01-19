@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            gap:-300px;
+        }
+        .part{
+            height: 300px;
+            width: 200px;
+            background: red;
+            border-radius: 100px 100px 0px 0px ;
+            transform: rotate(45deg);
+        } 
+        .part::before{
+            content: '';
+            position: absolute;
+            top:50px;
+            left:-50px;
+            height: 300px;
+            width: 200px;
+            background: red;
+            border-radius: 100px 100px 0px 0px ;
+            transform: rotate(-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="part"></div>
+</body>
+</html>

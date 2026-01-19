@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1::first-letter{
+            color: blue;
+        }
+        .one::first-line{
+            font-size: xx-large;
+        }
+        .two::before{
+            content: "I <3 ";
+        }
+        .two::after{
+            content: " !!";
+        }
+        p::selection{
+            background-color: yellow;
+            color: red;
+        }
+        p::marker{
+            color: green;
+            font-size: larger;
+        }
+
+        li::marker{
+            content: "© ";
+        }
+        input::placeholder{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>AYUSH KODLE</h1>
+    <p style="font-size: larger;" class="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis facilis dignissimos enim deserunt doloribus, debitis praesentium mollitia commodi saepe blanditiis itaque quia ullam, laudantium, voluptatibus dolores. Illum dolores aspernatur repellendus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil, consequatur aperiam. Dolorem, consequuntur et, soluta beatae debitis, vel quisquam repudiandae sequi quam atque corporis quibusdam ad sint quidem at ipsa.</p>
+    <p class="two" style="font-size: xx-large; text-align: center;">SITCOMS</p>
+
+    <ul>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+        <li>one</li>
+    </ul>
+
+    <hr>
+    <input placeholder="start typing">
+</body>
+</html>
