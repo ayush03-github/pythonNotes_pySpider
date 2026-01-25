@@ -80,7 +80,7 @@ skills.reverse()
 console.log(skills)
 
 
-// sort 
+// 11. sort 
 
 let randomNums = [100,23,234,345,567,2345,654,6543]
 const sorted = randomNums.sort((a,b)=>{
@@ -96,7 +96,7 @@ console.log("sorted numbers ->", sorted)
 
 // _______________________________________________________________________________
 
-// MAP()
+// 12. MAP()
 
 
 
@@ -143,3 +143,94 @@ products.map((products)=>{
     console.log("price", products.price)
 
 })
+// ____________________________________________________________________________________________________________________
+
+
+// 13. filter() 
+// : is udes to filter out the value with repect to the condition provided
+
+
+let num = [1,2,3,4,5,6,7,8,9,10]
+let divThree = num.filter((item) => {
+    return item % 3 == 0
+})
+console.log(divThree)
+
+
+// ____________________________________________________________________________________________________________________
+// 14. reduce()
+// : is used to reduce the array to a single value based on the logic provided
+
+let nums = [1,2,3,4,5,6,7,8,9,10]
+ sum = nums.reduce((acc,curVal) => {
+  return acc ** curVal
+ })
+console.log(sum)
+
+
+// ____________________________________________________________________________________________________________________
+
+// 15. forEach()
+// : is used to iterate over each element of the array
+
+let numbers = [10,20,30,40,50]
+
+numbers.forEach((item)=>{
+    console.log(item)
+})
+
+// note :'map()' returns a new array whereas 'forEach()' does not returns individual value
+
+// ____________________________________________________________________________________________________________________
+
+// 16. some()
+// : checks if atleast one element in the array satisfies the given condition
+
+let number = [2,4,6,8,10,11]
+
+let isOdd = number.some((item)=>{
+    return item % 2 != 0
+})  
+
+console.log(isOdd)  // true
+
+// ____________________________________________________________________________________________________________________
+
+// 17. every()
+// : checks if all the elements in the array satisfies the given condition    
+
+let number1 = [2,4,6,8,10,12]
+
+let allEven = number1.every((item)=>{
+    return item % 2 == 0
+})    
+console.log(allEven)  // true
+
+// ____________________________________________________________________________________________________________________
+
+
+// 18. flat()
+// : is used to flatten the nested array into single array
+let nestedArray = [1,2,[3,4],[5,6],[7,8,9]]
+let flatArray = nestedArray.flat()
+console.log(flatArray)  // [1,2,3,4,5,6,7,8,9]
+
+let nestedArray2 = [1,2,[3,4],[5,6,[3,4],[5,6]],[7,8,9]]
+let flatArray2 = nestedArray2.flat(2)
+console.log(flatArray2)  // [1,2,3,4,5,6,3,4,5,6,7,8,9]
+
+let nestedArray3 = [1,2,[3,4],[5,6,[3,4,[9,10,[5,6,[3,4,[9,10]]]],[5,6]]],[7,8,9]]
+let flatArray3 = nestedArray3.flat(Infinity)
+console.log(flatArray3)  // [1,2,3,4,5,6,3,4,9,10,5,6,3,4,9,10,5,6,7,8,9]
+
+// ____________________________________________________________________________________________________________________
+
+// destructuring of array
+// defination: Assigning a value to a distinct variable by unpacking it from array collection
+let colors = ["Red", "Green", "Blue", "Yellow"]
+
+let [color1, color2, color3, color4] = colors 
+console.log(color1)  // Red
+console.log(color2)  // Green
+console.log(color3)  // Blue
+console.log(color4)  // Yellow
